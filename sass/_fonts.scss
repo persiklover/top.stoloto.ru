@@ -1,0 +1,65 @@
+$fonts: '../fonts/';
+
+@font-face {
+  font-family: 'Roboto';
+  src: 
+    local('Roboto'),
+    local('Roboto-Regular'),
+    url($fonts + 'Roboto/Roboto-Regular.woff2') format('woff2'),
+    url($fonts + 'Roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    local('Roboto Bold'),
+    local('Roboto-Bold'),
+    url($fonts + 'Roboto/Roboto-Bold.woff2') format('woff2'),
+    url($fonts + 'Roboto/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin robotoBold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: 
+    local('Roboto Light'),
+    local('Roboto-Light'),
+    url($fonts + 'Roboto/Roboto-Light.woff2') format('woff2'),
+    url($fonts + 'Roboto/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin robotoLight {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: 
+    local('Roboto Black'),
+    local('Roboto-Black'),
+    url($fonts + 'Roboto/Roboto-Black.woff2') format('woff2'),
+    url($fonts + 'Roboto/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin robotoBlack {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}

@@ -1,0 +1,135 @@
+@import "../../components/logo"
+@import "../../components/loteries"
+  
+.section1
+  padding: 5.5rem 0 1.5rem
+  position: relative
+
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+    +sm
+      flex-direction: column
+
+  &__header
+    margin-bottom: 8rem
+
+    +sm
+      margin-bottom: 5rem
+
+  &__footer
+    text-align: center
+
+  &-title
+    position: relative
+    z-index: 0
+
+    +robotoLight
+    font-size: 3.5rem
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      z-index: -1
+      left: -17rem
+      top:   -5rem
+      width:  18.8rem
+      height: 18.8rem
+      background: $body-bg-color url(../img/clover.png) no-repeat center / cover
+
+      +sm
+        left: -18rem
+        top:   -7rem
+
+    b,
+    strong
+      +robotoBold
+    
+    strong
+      color: #ffcd18
+
+    b
+      display: block
+  
+  &__title
+    margin-top:   3.4rem
+    margin-right: 8.8rem
+
+    +sm
+      margin: 0
+      margin-left: 12rem
+      margin-top: 7.5rem
+  
+  &__scrolldown
+    margin-top: 6.5rem
+  
+  &__decor1
+    position: absolute
+    z-index: 3
+    right:  -16rem
+    bottom: -19rem
+    width:  50.1rem
+    height: 50.1rem
+    +no-select
+
+    +sm
+      width:  24.9rem
+      height: 24.9rem
+      bottom: auto
+      top:   -12rem
+      right: -10rem
+
+  &__decor2
+    position: absolute
+    z-index: 3
+    right:  -14rem
+    bottom:  32rem
+    width:  29.6rem
+    height: 29.1rem
+    +no-select
+
+    +sm
+      bottom: -15rem
+      z-index: -1
+  
+  &__decor3
+    position: absolute
+    z-index: 3
+    left:    0
+    bottom:  22rem
+    width:  19.4rem
+    height: 35.5rem
+    +no-select
+
+    +sm
+      width:  19.4rem * .7
+      height: 35.5rem * .7
+      bottom: auto
+      top: 30rem
+
+  &__light1
+    position: absolute
+    z-index: -1
+    left: 0
+    top:  0
+    width:  35.8rem
+    height: 39.6rem
+    +no-select
+
+    +sm
+      top:    auto
+      bottom: -10rem
+      transform: rotate(-90deg)
+
+  
+  &__light2
+    position: absolute
+    z-index: -1
+    right: 0
+    top:   0
+    width: 46.5rem
+    height: 45.7rem
+    +no-select

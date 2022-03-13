@@ -1,0 +1,73 @@
+@import "../components/socials"
+  
+.footer
+  position: relative
+  background: #383838
+  padding: 6rem 0 12.5rem
+
+  font-size: 2.5rem
+
+  +sm
+    padding: 6rem 0
+
+  &-wrap
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  
+  &__logo
+    margin-bottom: 4.5rem
+
+    img
+      width: 31.1rem
+      height: 8.7rem
+  
+  &__socials
+    position: absolute
+    left: 70rem
+    top:  13rem
+
+    +sm
+      position: static
+      margin-top: 8.5rem
+  
+  &__legal
+    a
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+  &__doc
+    text-decoration: underline
+
+    &:hover,
+    &:focus
+      text-decoration: none
+
+  &__copyright
+    display: inline-block
+    margin-top: 3rem
+    font-size: 1em
+
+  &__decor-cropper
+    position: absolute
+    right:  -13rem
+    bottom:   0rem
+    overflow: hidden
+    width:  61.4rem
+    height:   38rem
+    +no-select
+
+    +sm
+      right:  0
+      width:  30rem
+      height: 36rem
+
+    img
+      height: 61.5rem
+
+      +sm
+        transform: rotate(-17deg)
+        width:  49.7rem
+        height: 49.7rem

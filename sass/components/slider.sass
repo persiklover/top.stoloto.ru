@@ -1,0 +1,276 @@
+.slider
+
+  &.enabled
+    .slider
+      &__item
+        margin-bottom: 0
+  
+  &--black
+    .owl-dots
+      color: black
+
+  &__item
+    margin-bottom: 4rem
+    position: relative
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      left:   0
+      bottom: 100%
+      margin-bottom: -.2rem
+      width:  100%
+      height: 12rem
+      background: url(../img/shape1.png) no-repeat bottom/195rem
+
+      +sm
+        background-size: 85rem
+
+    &--1
+      background: #d383e1
+      color: #fefefe
+
+    &--2
+      background: #fdb730
+      color: #292929
+      &::before
+        background-image: url(../img/shape2.png)
+    
+    &--3
+      background-color: #ffd925
+      color: #292929
+      &::before
+        background-image: url(../img/shape3.png)
+    
+    &--4
+      background-color: #fe8933
+      color: #292929
+      &::before
+        background-image: url(../img/shape4.png)
+
+    &:last-child
+      margin-bottom: 0
+    
+  &-item
+    height: 67.5rem
+    padding:    2.5rem 0 12.5rem
+    margin-top: 12.5rem
+
+    font-size: 2.4rem
+
+    +sm
+      height: auto
+      padding-bottom: 6em
+
+    &-wrap
+      position: relative
+      padding-left: 77rem
+      padding-top:  5rem
+
+      +sm
+        padding-left: 0
+        padding-top:  0
+
+    &__img
+      position: absolute
+      left: 0
+      top:  0
+
+      +sm
+        position: static
+
+      &--1
+        width:  59.7rem !important
+        height: 18.9rem !important
+      
+      &--2
+        width: 51.4rem !important
+        height:  19rem !important
+      
+      &--3
+        width:  34.9rem !important
+        height: 24.4rem !important
+      
+      &--4
+        width:  40.2rem !important
+        height: 25.4rem !important
+    
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+
+      +sm
+        margin-top: 6rem
+    
+    &__subtitle
+      margin: 0
+
+      font-size: 4rem
+
+      b
+        display: block
+        margin: .75rem 0
+
+        font-size: 5rem
+        +robotoBlack
+
+    &__p
+      margin: 0
+      margin-bottom: 2.5rem
+
+      &:last-child
+        margin-bottom: 0
+
+    &__footer
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin-top: 6rem
+
+      font-size: 2.4rem
+      font-weight: bold
+
+      +sm
+        width: 100%
+        flex-direction: row
+        align-items: center
+    
+    &__next
+      display: block
+
+      +sm
+        span
+          display: block
+
+    &__btn
+      margin-top: 2.5rem
+      background-color: #00a014
+      border: none
+      border-radius: .25rem
+      padding: 1.5rem 2.4rem
+
+      color: #fff
+      +roboto
+      font-size: 2.4rem
+
+      transition:  background-color .2s ease-in
+      will-change: background-color
+
+      cursor: pointer
+
+      &--stroke
+        box-shadow: 0 0 0 0.6rem #fff
+
+      &:hover,
+      &:focus
+        background: lighten(#00a014, 10)
+      
+      +sm
+        margin-top:  0
+        margin-left: 10rem
+
+    &-fact
+      position: absolute
+      left: 0
+      top:  30rem
+
+      font-size: 2.4rem
+
+      +sm
+        position: relative
+        width: 100%
+        left: 0
+        top:  0
+        margin-top: 8rem
+
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top:     -2rem
+        width:   60rem
+        height: 0.2rem
+        background: currentColor
+
+        +sm
+          width: 100%
+
+      &__title
+        +robotoBlack
+
+      &__text
+        margin: 0
+        margin-bottom: 3rem
+  
+  .owl
+    &-prev,
+    &-next
+      position: absolute
+      top: 25rem
+
+      display: flex
+      justify-content: center
+      align-items: center
+      width:  4.8rem
+      height: 4.8rem
+      background-color: #fff !important
+      border-radius: 50%
+
+      transition:  transform .15s ease-in
+      will-change: transform
+
+      &:focus
+        outline: none
+
+      &:hover,
+      &:focus
+        transform: scale(1.3)
+        
+
+      +sm
+        top: auto
+        bottom: 5.5rem
+
+      img
+        width:  2.8rem
+        height: 2.5rem
+    
+    &-prev
+      left: 22rem
+
+      img
+        transform: rotate(90deg)
+    
+    &-next
+      right: 22rem
+      
+      img
+        transform: rotate(-90deg)
+  
+    &-dot
+      width:  1.8rem
+      height: 1.8rem
+      margin-right: 1.1rem
+      background: none !important
+      border: 0.2rem solid currentColor !important
+      border-radius: 50%
+
+      &.active
+        background: currentColor !important
+
+      &s
+        position: absolute
+        z-index: 2
+        left:   50%
+        bottom: 7.5rem
+        transform: translateX(-50%)
+        padding: 0
+        margin: 0
+        display: flex
+        justify-content: center
+        align-items: center
+
+        +sm
+          bottom: 7.25rem
